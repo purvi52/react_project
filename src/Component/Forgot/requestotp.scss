@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+$primary-color: #F03A47;
+$secondary-color: #fff;
+
+.otp-background{
+    background-image: url('../../../public/assets/posters/Backgrond_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    .otp-logo-form{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .otp-logo{
+            display: flex;
+            align-self: center;
+            margin-top: 8rem;
+            width: 20rem;
+            height: 6rem;
+        }
+
+        .otp-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 72rem;
+            height: 30rem;
+            flex-shrink: 0;
+            border-radius: 25px;
+            background: linear-gradient(139deg, rgba(255, 255, 255, 0.19) 0%, rgba(234, 234, 234, 0.08) 57.57%, rgba(223, 214, 214, 0.00) 100%);
+            backdrop-filter: blur(19.73556137084961px);
+            color: $secondary-color;
+        }
+
+        .back-button{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: row;
+
+            h3{
+                font-family: Nunito Sans;
+                font-size: 2.25rem;
+                font-weight: 700;
+                width: 20rem;
+                margin-bottom: 1rem;
+                margin-left: 16rem;
+                margin-right: 25rem;
+            }
+
+            button{
+                display: flex;
+                margin-left: 2rem;
+                background: transparent;
+                border: transparent;
+                flex-direction: row;
+                align-items: center; 
+                color: $secondary-color;
+                font-size: 1.2rem;
+                font-family: Nunito Sans;
+                cursor: pointer;
+            }
+        }
+
+        .otp-inputs{
+            display: flex;
+            flex-direction: row;
+            margin-top: 3rem;
+
+            input{
+                margin: 0.5rem;
+                width: 7rem;
+                height: 4.5rem;
+                flex-shrink: 0;
+                border-radius: 15px;
+                border: 0.9px solid #8B8B8B;
+                color: $secondary-color;
+                font-size: 2rem;
+                text-align: center;
+                background: var(--grass-gradient, linear-gradient(139deg, rgba(255, 255, 255, 0.19) 0%, rgba(234, 234, 234, 0.08) 57.57%, rgba(223, 214, 214, 0.00) 100%));
+            }
+        }
+        .otp-verify{
+            display: flex;
+            margin-top: 2rem;
+            width: 33rem;
+            height: 4rem;
+            padding: 1.0625rem 11.5625rem 1rem 11.5625rem;
+            justify-content: center;
+            align-self: center;
+            border-radius: 10px;
+            background-color: $primary-color;
+            border: transparent;
+            color: $secondary-color;
+            font-size: 1.4rem;
+            font-family: Nunito Sans;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .resend-text{
+            display: flex;
+            flex-direction: row;
+
+            .resend{
+                margin-right: 14rem;
+            }
+
+            .resend-time{
+                margin-left: 14rem;
+            }
+        }
+    }
+    .render-to{
+        text-decoration: none;
+    }
+}

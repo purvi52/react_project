@@ -1,0 +1,165 @@
+$primary-color: #F03A47;
+$secondary-color: #fff;
+
+.background-img{
+    background: url('../../../public/assets/posters/bg-login.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login{
+        background: rgba(0,0,0,0.9);
+        color: $secondary-color;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        flex-direction: column;
+    }
+    
+    .logo{
+        width: 15%;
+        height: 15%;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 1px;
+
+    } 
+
+    .login_credential{
+        margin:auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .login_entry{
+        padding: 10px;
+        width: 35vw;
+        height: 4vh;
+        background-color: $secondary-color;
+        border: 2px solid transparent;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+
+    h1{
+        margin-top: 0;
+        display: flex;
+        justify-content: start;
+        padding-left: 10px;
+    }
+
+    .login-btn{
+        padding: 8px 20px 8px 20px;
+        width: 36.5vw;
+        height: 6vh;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 0;
+        background-color: $primary-color;
+        border-radius: 8px;
+        color: $secondary-color;
+        font-size: 1.5rem;
+        font-weight: bold;
+        border: 2px solid transparent;
+        cursor: pointer;
+    }
+
+    .forgot-pass{
+        background: transparent;
+        border: 2px solid transparent;
+        color: $primary-color;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: end;  
+        padding-right: 10px;      
+    }
+
+    .checkbox{
+        display: flex;
+        justify-content: start;
+        padding: 15px 0 8px 0;
+    }
+
+    .label-check{
+        color: $primary-color;
+        font-size: 1rem;
+        padding-left: 8px;
+    }
+
+    .span{
+        padding-bottom: 2px;
+        border-bottom: 2px $primary-color solid;
+        color: $primary-color;
+        font-size: 1.2rem;
+    }
+
+    .signin-opt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 15px;
+        margin: 3.4rem 0 3.4rem 1.2rem;
+
+        .left-border{
+            width: 270px;
+            height: 3px;
+            background: $primary-color;
+        }
+
+        .content{
+            margin: 0 0.9rem;
+            font-size: 18px;
+            color: #888888;
+        }
+
+        .right-border{
+            width: 270px;
+            height: 3px;
+            background: $primary-color;
+        }
+    }
+
+    .byGoogle{
+        display: flex;
+        justify-content: center;
+
+        button{
+            display: flex;
+            align-items: center;
+            background-repeat: 10px;
+            border: 1px solid #8b8b8b;
+            background: $secondary-color;
+            margin-right: 4rem;
+            padding: 15px 25px;
+            font-size: 24px;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        img{
+            width: 40px;
+            height: 40px;
+            margin-right: 9px;
+        }
+    }
+    .link_to{
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+

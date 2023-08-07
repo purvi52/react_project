@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+$primary-color: #F03A47;
+$secondary-color: #fff;
+
+.forgot-background{
+    background-image: url('../../../public/assets/posters/Backgrond_image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    .forgot-logoform{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column; 
+        
+        .forgot-logo{
+            display: flex;
+            align-self: center;
+            margin-top: 8rem;
+            width: 20rem;
+            height: 6rem;
+        }
+
+        .forgot-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 72rem;
+            height: 30rem;
+            flex-shrink: 0;
+            border-radius: 25px;
+            background: linear-gradient(139deg, rgba(255, 255, 255, 0.19) 0%, rgba(234, 234, 234, 0.08) 57.57%, rgba(223, 214, 214, 0.00) 100%);
+            backdrop-filter: blur(19.73556137084961px);
+            color: $secondary-color;
+        }
+
+        .back-btn{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: row;
+
+            h3{
+                font-family: Nunito Sans;
+                font-size: 2.25rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                margin-left: 16rem;
+                margin-right: 23rem;
+            }
+
+            button{
+                display: flex;
+                margin-left: 2rem;
+                background: transparent;
+                border: transparent;
+                flex-direction: row;
+                align-items: center; 
+                color: $secondary-color;
+                font-size: 1.2rem;
+                font-family: Nunito Sans;
+                cursor: pointer;
+            }
+        }
+
+        p{
+            font-family: Nunito Sans;
+            font-size: 1.2rem;
+            margin-top: 0;
+        };
+
+        input{
+            display: flex;
+            margin-top: 4rem;
+            width: 20rem;
+            height: 4.5rem;
+            padding: 0rem 29.25rem 0rem 1.3125rem;
+            align-self: center;
+            color: $secondary-color;
+            font-size: 1.2rem;
+            font-family: Nunito Sans;
+            flex-shrink: 0;
+            border-radius: 15px;
+            border: 0.9px solid #8B8B8B;
+            background: var(--grass-gradient, linear-gradient(139deg, rgba(255, 255, 255, 0.19) 0%, rgba(234, 234, 234, 0.08) 57.57%, rgba(223, 214, 214, 0.00) 100%));
+        }
+
+        .req-otp{
+            display: flex;
+            margin-top: 2rem;
+            width: 50.5rem;
+            height: 4rem;
+            padding: 1.0625rem 11.5625rem 1rem 11.5625rem;
+            justify-content: center;
+            align-self: center;
+            border-radius: 10px;
+            background-color: $primary-color;
+            border: transparent;
+            color: $secondary-color;
+            font-size: 1.4rem;
+            font-family: Nunito Sans;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .link-to{
+            text-decoration: none;
+        }
+    }
+}

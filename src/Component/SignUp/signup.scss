@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+$primary-color: #F03A47;
+$secondary-color: #fff;
+
+.backImage{
+    background-image: url('../../../public/assets/posters/backgrond-image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    .foreImage{
+        background-image: url('../../../public/assets/posters/sign-up-bg.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        height: 100vh;  
+        display: flex;
+        align-items: center;  
+        
+        .signup-page{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            margin-left: 15rem;
+    
+            .app-logo{
+                margin-left: 0.7rem;
+            }
+    
+            .Signup-heading{
+                color: $secondary-color;    
+                font-size: 32px;
+                font-family: Nunito Sans;
+                font-weight: 600;
+                margin-bottom: 0;
+                margin-left: 0.7rem;
+            }
+    
+            .signup_form{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+        
+                .signup-input{
+                    margin: 0.7rem;
+                    padding-left: 10px;
+                    width: 550px;
+                    height: 64px;      
+                    border: 2px solid transparent;
+                    font-size: 1rem;
+                    color: $secondary-color;
+                    border-radius: 15px;
+                    border: 0.9px solid #8B8B8B;
+                    background: var(--grass-gradient, linear-gradient(139deg, rgba(255, 255, 255, 0.19) 0%, rgba(234, 234, 234, 0.08) 57.57%, rgba(223, 214, 214, 0.00) 100%));
+                }
+        
+                .signup-check{
+                    display: flex;
+                    flex-direction: row;
+                    color: $secondary-color;
+                    margin-bottom: 1rem;
+                    margin-left: 0.7rem;
+        
+                    a{
+                        color: $primary-color;
+                    }
+                }
+        
+                .signup-btn{
+                    padding: 8px 20px 8px 20px;
+                    width: 550px;
+                    height: 64px;
+                    margin: auto;
+                    margin-top: 2.4rem;
+                    margin-bottom: 0;
+                    margin-left: 1rem;
+                    background-color: $primary-color;
+                    border-radius: 8px;
+                    color: $secondary-color;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    border: 2px solid transparent;
+                }
+            }
+    
+        }
+
+        .tags{
+            flex: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .display-lines{
+            
+                position: relative;
+                width: 15vw;
+                height: 30rem;
+                flex-shrink: 1;
+            }
+    
+            .dl1{
+                color: $primary-color;
+            }
+    
+            h1, p{
+                color: $secondary-color;
+            }
+    
+            .display-line1, .display-line2{
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+    
+            .display-line1{
+                font-size: 25px;
+                animation: fadeInOut 10s linear infinite;
+            }
+    
+            .display-line2{
+                font-size: 25px;
+                animation: fadeOutIn 10s linear infinite;
+            }
+    
+            @keyframes fadeInOut {
+                0%, 50%{
+                    opacity: 0;
+                }
+                25%{
+                    opacity: 1;
+                }
+            }
+    
+            @keyframes fadeOutIn {
+                50%, 100%{
+                    opacity: 0;
+                }
+                75%{
+                    opacity: 1;
+                }
+            }
+        }
+
+        
+    }
+}

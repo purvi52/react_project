@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+$primary-color: #F03A47;
+
+
+.background-image{
+    background-image: url('../../../public/assets/posters/backgrond-image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    .background2{
+        background-image: url('../../../public/assets/posters/sign-up-bg.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        height: 100vh;  
+        display: flex;
+        align-items: center;    
+    }
+
+    .logo-n-text{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        .texts{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 10rem;
+
+            img{
+                margin-right: 17rem;
+            }
+        
+            h1{        
+                width: 560px;
+                height: 172px;
+                margin-left: 4rem;
+                margin-top:2rem;
+                font-family: 'Nunito Sans';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 76px;        
+                color: $primary-color;
+            }
+            .sub_line{
+                display: flex;
+                flex-direction: column;
+                .text{  
+                    margin-top: 0;
+                    margin-bottom: 0;     
+                    font-family: 'Nunito Sans';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 32px;
+                    display: flex;
+                    justify-content: flex-start;
+                    color: white;
+                }
+            
+                .text_1{
+                    margin-top: 0;
+                    margin-bottom: 0;     
+                    font-family: 'Nunito Sans';
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    color: white;
+                }
+            }
+        }
+        
+        
+    }
+}
+
+
+.Buy_Now{
+    width: 20em;
+    background: linear-gradient(139deg, rgba(255, 255, 255, 0.19) 0%, rgba(234, 234, 234, 0.08) 57.57%, rgba(223, 214, 214, 0.00) 100%);
+    border-radius: 25px;
+    color: white;
+    margin: 0.8rem;
+
+    button{
+        margin-bottom: 2rem;
+        width: 252.778px;
+        height: 59.091px;
+        border-radius: 20px;
+        background: $primary-color;
+        border: transparent;
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Inter' sans-serif;
+        font-weight: 700;
+    }
+
+    .line{
+        color: white;
+        opacity: 0.1;
+    }
+
+    .planname{
+        color: $primary-color;
+    }
+
+    .price{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .rs{
+            color: #FFF;
+            text-align: center;
+            font-size: 20px;
+            font-family: Nunito Sans;
+            font-weight: 700;
+        }
+
+        .digit{
+            color: #FFF;
+            text-align: center;
+            margin-top: 0.5rem;
+            font-size: 40px;
+            font-family: Nunito Sans;
+            font-weight: 700;
+            line-height: 40px;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            margin-bottom: 0;
+        }
+
+        .yr{
+            color: #FFF;
+            text-align: center;
+            font-size: 20px;
+            font-family: Nunito Sans;
+        }
+    }
+
+    .device{
+        margin-top: 0;
+        margin-bottom: 4rem;
+        color: #FFF;
+        text-align: center;
+        font-size: 20px;
+        font-family: Nunito Sans;
+    }
+
+    .resolution{
+        margin-bottom: 0;
+    }
+
+    .res-detail{
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-top: 0;
+    }
+
+    .quality{
+        margin-bottom: 0;
+    }
+
+    .q-detail{
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-top: 0;
+    }
+
+    .S-devices{
+        margin-bottom: 0;
+    }
+
+    .typesof-devices{
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+}
